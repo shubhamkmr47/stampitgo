@@ -4,7 +4,7 @@ Stampitgo values users Loyalty for Stores by rewarding him on each visit. With S
 
 
 
-### What is this project for? ###
+### About ###
 
 * The project of android application was part of software development course. I have done internship at Techanipr group and worked with them for 3 months as the part of this project.
 * Version: 1.0.0.1
