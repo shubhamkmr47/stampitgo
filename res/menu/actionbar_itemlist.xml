@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/action_notification"
+          android:actionLayout="@layout/action_bar_notifitcation_icon"
+          android:icon="@drawable/ic_notification"
+          android:title="Notifications"
+          android:showAsAction="always" />
+    
+     <item android:id="@+id/action_scan"
+          android:icon="@drawable/ic_scan"
+          android:title="Scan Qr Code"
+          android:showAsAction="always" />
+     
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_profile"
+          android:title="UserId"
+          android:showAsAction="never" />
+    <item android:id="@+id/action_promocode"
+          android:title="Promo Code"
+          android:showAsAction="never" />
+    <item android:id="@+id/action_feedback"
+          android:title="Feedback"
+          android:showAsAction="never" />
+    
+    <item android:id="@+id/action_aboutUs"
+          android:title="About Us"
+          android:showAsAction="never" />
+    <item android:id="@+id/action_logout"
+          android:title="Logout"
+          android:showAsAction="never" />
+    
+	
+</menu>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    xmlns:app="http://schemas.android.com/apk/res/anipr.stampitgo.android"
+    xmlns:card_view="http://schemas.android.com/apk/res/anipr.stampitgo.android">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true"  >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/restaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/restaurantCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:adjustViewBounds="true"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cover_image_placeholder_pattern" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/linearlayout"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/top_to_bottm_gradient" />
+
+                <!-- <ImageView -->
+                <!-- android:id="@+id/gradient1" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_alignBottom="@+id/restaurantCover" -->
+                <!-- android:layout_alignParentRight="true" -->
+                <!-- android:layout_alignParentTop="true" -->
+                <!-- android:scaleType="fitXY" -->
+                <!-- android:src="@drawable/gradient" /> -->
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logo_placeholder_pattern"  />
+
+                <TextView
+                    android:id="@+id/storeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/logo"
+                    android:layout_marginRight="70dp"
+                    android:layout_toRightOf="@id/logo"
+                    android:maxWidth="190dp"
+                    android:paddingLeft="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <LinearLayout
+                    android:id="@+id/linearlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/storeName"
+                    android:layout_below="@+id/storeName"
+                    android:paddingBottom="20dp" >
+
+                    <ImageView
+                        android:id="@+id/navigation_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignLeft="@+id/storeName"
+                        android:layout_below="@+id/storeName"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/ic_icon_location" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/navigation_icon"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toRightOf="@+id/navigation_icon"
+                        android:maxWidth="170dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/storeName"
+                    android:background="#EF6262"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="#Category"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/reward_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/restaurant"
+                android:paddingBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/text_grey"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignBottom="@+id/reward_message"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/circle_stamp" >
+
+                <TextView
+                    android:id="@+id/user_stamps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="5"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_stamps"
+                    android:layout_centerHorizontal="true"
+                    android:text="STAMPS"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

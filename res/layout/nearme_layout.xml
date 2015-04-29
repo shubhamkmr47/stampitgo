@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <Spinner
+        android:id="@+id/nearby_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#656364" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/nearbypageSwipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nearby_filter"
+        android:layout_alignRight="@+id/nearby_filter"
+        android:layout_below="@id/nearby_filter" >
+
+        <ListView
+            android:id="@+id/nearMeList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:divider="@color/background_color"
+            android:dividerHeight="5dp" >
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/near_me_progressbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/near_by_coverframe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/nearme_error_frame_image"
+            android:layout_width="@dimen/mystamp_error_page_image_width"
+            android:layout_height="@dimen/mystamp_error_page_image_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/mystamp_error_page_image_margin_top"
+            android:src="@drawable/ic_icon_error" />
+
+        <TextView
+            android:id="@+id/near_by_error_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/rewards_page_error_message_margintop"
+            android:gravity="center"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_grey" />
+
+        <ImageButton
+            android:id="@+id/nearby_frame_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="@dimen/rewards_framebutton_margin_top"
+            android:background="@android:color/transparent"
+            android:src="@drawable/refresh_icon" />
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/textView1" >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="@dimen/tutorial_image"
+            android:layout_height="@dimen/tutorial_image"
+            android:layout_centerInParent="true"
+            android:src="@drawable/img_tutorial_redeem" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/stamp_tutorial_margin_bottom"
+        android:layout_marginLeft="@dimen/tutorial_detail_horizontal_margin"
+        android:layout_marginRight="@dimen/tutorial_detail_horizontal_margin"
+        android:layout_marginTop="@dimen/tutorial_detail_margin_top"
+        android:gravity="center"
+        android:text="@string/tutorial_redeem_detail"
+        android:textColor="#B6B6B6"
+        android:textSize="@dimen/tutorial_details_text_size"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tutorial_redeem_title"
+        android:textColor="#434142"
+        android:textSize="@dimen/title_textsize"
+        android:typeface="monospace" />
+
+</RelativeLayout>

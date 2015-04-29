@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="anipr.stampitgo.android.Notifications" >
+
+    <ListView
+        android:id="@+id/notifications_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </ListView>
+
+    <FrameLayout
+        android:id="@+id/notifications_page_coverframe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/notifications_page_error_frame_image"
+            android:layout_width="@dimen/mystamp_error_page_image_width"
+            android:layout_height="@dimen/mystamp_error_page_image_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/mystamp_error_page_image_margin_top"
+            android:src="@drawable/ic_icon_error" />
+
+        <TextView
+            android:id="@+id/notifications_page_error_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/mystmp_error_message_margintop"
+            android:gravity="center"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_grey" />
+    </FrameLayout>
+
+</RelativeLayout>

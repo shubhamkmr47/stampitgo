@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/regular_offer_list_item_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop = "8dp"
+    android:paddingBottom="8dp"
+    android:paddingRight="5dp"
+    android:background="@color/restaurant_details_list_bg_grey" >
+
+    <TextView
+        android:id="@+id/regular_offer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+        android:maxWidth="200dp"
+        android:text="bcdibcicbid\u0026"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/restaurant_details_listview_text_color" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/expiery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/regular_offer_expirery"
+            android:text="Expires on"
+            android:textColor="@color/primary_color" />
+
+        <TextView
+            android:id="@+id/regular_offer_expirery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/expiery"
+            android:layout_marginRight="16dp"
+            android:text="ncudhcidbc"
+            android:textColor="@color/primary_color" />
+    </LinearLayout>
+
+</RelativeLayout>

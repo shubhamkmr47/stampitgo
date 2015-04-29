@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (coffee) 2008 ZXing authors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+ <SurfaceView android:id="@+id/preview_view"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               />
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/viewfinder_mask"
+         >
+
+  <TextView
+      android:id="@+id/textView1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="15dp"
+      android:text="Ask For"
+      android:textAppearance="?android:attr/textAppearanceSmall"
+      android:textColor="@android:color/white" />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/textView1"
+      android:layout_centerHorizontal="true"
+      android:textColor="#FFFFFF"
+      android:text="STAMPITGO QR CODE"
+      android:textStyle="bold"
+      android:textAppearance="?android:attr/textAppearanceLarge" />
+  <TextView
+          android:id="@+id/textView3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:gravity="center"
+          android:text="Place QR code within this screen for an automatic scan."
+          android:layout_centerHorizontal="true"
+          android:layout_below="@+id/textView2"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+
+  <LinearLayout android:id="@+id/result_view"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/result_view"
+                android:visibility="gone"
+                android:baselineAligned="false">
+
+    
+
+    <LinearLayout android:id="@+id/result_button_view"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:gravity="center">
+
+      <Button style="@style/ResultButton"
+              android:visibility="gone"/>
+
+      <Button style="@style/ResultButton"
+              android:visibility="gone"/>
+
+      <Button style="@style/ResultButton"
+              android:visibility="gone"/>
+
+      <Button style="@style/ResultButton"
+              android:visibility="gone"/>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+   
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/viewfinder_mask" >
+
+        
+       <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"    
+            android:orientation="horizontal"
+             >
+
+            
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="44dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="Enter 6 Digit number"
+                android:padding="5dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="27dp"
+                android:padding="5dp"
+                android:textColor="#FFFFFF"
+                android:text="SUBMIT"
+                
+                android:background="@drawable/redbutton"/>
+
+        </LinearLayout>
+
+       <TextView
+           android:id="@+id/textView4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Or"
+           android:gravity="center"
+           android:textSize="22sp"
+           android:textColor="#FFFFFF"
+           android:textStyle="bold"
+           android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+      <com.google.zxing.client.android.ViewfinderView
+          android:id="@+id/viewfinder_view"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent" />
+
+      <ImageView
+          android:id="@+id/flash"
+          android:layout_gravity="top|right"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:background="#FFFFFF"
+          android:layout_marginTop="10dp"
+          android:layout_marginRight="10dp"
+          android:src="@drawable/ic_action_flash_on" 
+          android:onClick="flash"/>
+
+</merge>

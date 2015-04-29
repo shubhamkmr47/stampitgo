@@ -1,0 +1,14 @@
+<resources>
+<!-- 	dimens General -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="user_grid_spacing">10dp</dimen>
+    <dimen name="length_bitween_textviews">18dp</dimen>
+	 <dimen name="edittext_margin_top">24dp</dimen>
+	 <dimen name="edittext_margin_left">12dp</dimen>
+	 <dimen name="edittext_margin_right">12dp</dimen>
+	 <dimen name="texview_hight">45dp</dimen>
+	 <dimen name="texview_left">6dp</dimen>
+	 <dimen name="stamp_tutorial_margin_bottom">20dp</dimen>
+</resources>

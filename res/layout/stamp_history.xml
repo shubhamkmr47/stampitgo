@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/stamp_history_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/stamp_history_pb"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerInParent="true"         />
+	<FrameLayout
+	    android:id="@+id/stamps_history_coverframe"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@android:color/white"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:visibility="invisible" >
+
+		<ImageView
+		    android:id="@+id/imageView1"
+		    android:layout_width="@dimen/stamps_history_coverframe_imageview_width"
+		    android:layout_height="@dimen/stamps_history_coverframe_imageview_height"
+		    android:layout_gravity="center_horizontal"
+		    android:layout_marginTop="@dimen/stamps_history_coverframe_imageview_margin_top"
+		    android:src="@drawable/ic_default_character" />
+
+		<TextView
+		    android:id="@+id/stamps_history_error_msg"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_horizontal"
+		    android:layout_marginTop="@dimen/stamps_history_coverframe_textview_margin_top"
+		    android:gravity="center"
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:textColor="@color/text_grey" />
+
+		
+    
+</FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_stamps_layout"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <Spinner
+        android:id="@+id/stampsCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#656364"/>
+    
+	<android.support.v4.widget.SwipeRefreshLayout
+	    android:id="@+id/SwipeRefreshLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@id/stampsCategory"
+	    >
+		<ListView
+		    android:id="@+id/storeList"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/stampsCategory"
+		    android:clickable="true"
+		    android:clipToPadding="false"
+		    android:divider="@android:color/transparent"
+  			android:dividerHeight="5dp"
+  			android:paddingLeft="10dp"
+  			android:paddingRight="10dp"
+		     >
+
+        </ListView>        
+	 </android.support.v4.widget.SwipeRefreshLayout>
+
+	<ProgressBar
+	    android:id="@+id/my_stamps_pb"
+	    style="?android:attr/progressBarStyleLarge"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true" />
+
+	<FrameLayout
+	    android:id="@+id/mystamps_coverframe"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@android:color/white"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:visibility="invisible" >
+
+		<ImageView
+		    android:id="@+id/my_stamps_error_frame_image"
+		    android:layout_width="@dimen/mystamp_error_page_image_width"
+		    android:layout_height="@dimen/mystamp_error_page_image_height"
+		    android:layout_gravity="center_horizontal"
+		    android:layout_marginTop="@dimen/mystamp_error_page_image_margin_top"
+		    android:src="@drawable/ic_icon_error" />
+
+		<TextView
+		    android:id="@+id/my_stamps_error_msg"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_horizontal"
+		    android:layout_marginTop="@dimen/mystmp_error_message_margintop"
+		    android:text="Medium Text"
+		    android:gravity="center"
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:textColor="@color/text_grey" />
+
+		
+    
+</FrameLayout>	
+</RelativeLayout>

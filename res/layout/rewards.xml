@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color" >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/rewardpageSwipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" >
+
+        <GridView
+            android:id="@+id/rewardsGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:clipToPadding="false"
+            android:horizontalSpacing="@dimen/user_grid_spacing"
+            android:numColumns="2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:verticalSpacing="@dimen/user_grid_spacing" >
+        </GridView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <FrameLayout
+        android:id="@+id/rewards_coverframe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@android:color/white"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/rewards_error_frame_image"
+            android:layout_width="@dimen/mystamp_error_page_image_width"
+            android:layout_height="@dimen/mystamp_error_page_image_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/mystamp_error_page_image_margin_top"
+            android:src="@drawable/ic_default_character" />
+
+        <TextView
+            android:id="@+id/rewards_error_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/rewards_page_error_message_margintop"
+            android:gravity="center"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_grey" />
+
+        <ImageButton
+            android:id="@+id/rewards_frame_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="@dimen/rewards_framebutton_margin_top"
+            android:background="@android:color/transparent"
+            android:src="@drawable/refresh_icon" />
+    </FrameLayout>
+
+</RelativeLayout>

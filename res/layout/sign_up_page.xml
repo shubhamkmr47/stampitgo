@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/back_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout1"
+            android:layout_alignParentTop="true" >
+
+            <ImageView
+                android:id="@+id/back_button_image"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_action_previous_item" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"
+                android:layout_alignTop="@+id/back_button_image"
+                android:layout_alignBottom="@+id/back_button_image"
+                android:layout_toRightOf="@+id/back_button_image"
+                android:textColor="@color/primary_color"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/texview_hight"
+            android:background="#CDCDCD" />
+
+        <EditText
+            android:id="@+id/signup_page_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:background="#EDEDED"
+            android:ems="10"
+            android:hint="Email Id"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="13dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="13dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/signup_page_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signup_page_email"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#EDEDED"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingBottom="13dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="13dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signup_page_password"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#EDEDED"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingBottom="13dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="13dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true" />
+
+        <RelativeLayout
+            android:id="@+id/signup_facebook_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/texview_hight"
+            android:layout_alignLeft="@+id/sign_up_Button"
+            android:layout_alignRight="@+id/sign_up_Button"
+            android:layout_below="@+id/sign_up_Button"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/facebook_button"
+            android:onClick="loginViaFB"
+            android:text="Button" >
+            
+            <ImageView
+            android:id="@+id/f"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_facebook_icon"
+            android:scaleType="center" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/f"
+            android:background="#355294" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/facebook_button_text"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/sign_up_Button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/confirmPassword"
+            android:layout_alignRight="@+id/confirmPassword"
+            android:layout_below="@+id/confirmPassword"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/redbutton"
+            android:onClick="register"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+</ScrollView>

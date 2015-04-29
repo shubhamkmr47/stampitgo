@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- dimens Xhdpi -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="user_grid_spacing">10dp</dimen>
+    <dimen name="length_bitween_textviews">18dp</dimen>
+    <dimen name="edittext_margin_top">24dp</dimen>
+    <dimen name="edittext_margin_left">12dp</dimen>
+    <dimen name="edittext_margin_right">12dp</dimen>
+    <dimen name="texview_hight">45dp</dimen>
+    <dimen name="texview_left">6dp</dimen>
+    <dimen name="stamp_tutorial_margin_bottom">20dp</dimen>
+    <dimen name="tutorial_stamp_image_size">180dp</dimen>
+    <dimen name="tutorial_image_margin_top">30dp</dimen>
+    <dimen name="tutorial_detail_horizontal_margin">40dp</dimen>
+    <dimen name="title_textsize">40sp</dimen>
+    <dimen name="tutorial_title_margin_top">20dp</dimen>
+    <dimen name="tutorial_details_text_size">18sp</dimen>
+    <dimen name="tutorial_detail_margin_top">10dp</dimen>
+    <dimen name="tutorial_image">160dp</dimen>
+    <dimen name="stamp_card_storename">22sp</dimen>
+    <dimen name="mystamp_error_page_image_width">200dp</dimen>
+    <dimen name="mystamp_error_page_image_height">200dp</dimen>
+    <dimen name="mystamp_error_page_image_margin_top">70dp</dimen>
+    <dimen name="mystmp_error_message_margintop">290dp</dimen>
+    <dimen name="rewards_page_error_message_margintop">280dp</dimen>
+    <dimen name="rewards_framebutton_margin_top">330dp</dimen>
+    <dimen name="stamps_history_coverframe_imageview_width">120dp</dimen>
+    <dimen name="stamps_history_coverframe_imageview_height">120dp</dimen>
+    <dimen name="stamps_history_coverframe_imageview_margin_top">30dp</dimen>
+    <dimen name="stamps_history_coverframe_textview_margin_top">160dp</dimen>
+
+</resources>

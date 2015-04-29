@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <span style="line-height: 1.5; font-style: inherit; font-weight: inherit;">tools:ignore="TypographyDashes"></span>
+
+    <!-- The apps Analytics Tracking Id -->
+    <string name="ga_trackingId">UA-58899973-1</string>
+
+    <!-- Percentage of events to include in reports -->
+    <string name="ga_sampleFrequency">100.0</string>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!-- catch and report uncaught exceptions from the app -->
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <!-- How long a session exists before giving up -->
+    <integer name="ga_sessionTimeout">-1</integer>
+
+    <!--
+If ga_autoActivityTracking is enabled, an alternate screen name can be specified to
+substitute for the full length canonical Activity name in screen view hit. In order to
+specify an alternate screen name use an <screenName> element, with the name attribute
+specifying the canonical name, and the value the alias to use instead.
+    -->
+    <screenName name="anipr.stampitgo.android.MainActivity">HomeScreen</screenName>
+    <screenName name="anipr.stampitgo.android.SignUp">Sign Up Screen</screenName>
+    <screenName name="anipr.stampitgo.android.ScanResponse">Scan Result Screen</screenName>
+    <screenName name="anipr.stampitgo.android.RedeemReward">Redeem Reward Screen</screenName>
+    <screenName name="anipr.stampitgo.android.Notifications">Notifications Screen</screenName>
+    <screenName name="anipr.stampitgo.android.GetStarted">GetStarted Screen</screenName>
+    <screenName name="anipr.stampitgo.android.Login">Login Screen</screenName>
+    <screenName name="anipr.stampitgo.android.Profile">User Profile Screen</screenName>
+    <screenName name="anipr.stampitgo.android.ShoutOut">ShoutOut Screen</screenName>
+    <screenName name="anipr.stampitgo.android.AboutUs">AboutUs Screen</screenName>
+    <screenName name="anipr.stampitgo.android.ChangePassword">ChangePassword Screen</screenName>
+    <screenName name="anipr.stampitgo.android.PromoCode">PromoCode Screen</screenName>
+    <screenName name="anipr.stampitgo.android.ForgotPassword">ForgotPassword Screen</screenName>
+    <screenName name="com.example.android.slidingtabsbasic.RestaurantDetails">Store Details</screenName>
+    <screenName name="anipr.stampitgo.android.StampsFragment">MyStamps Screen</screenName>
+    <screenName name="anipr.stampitgo.android.Rewards">Rewards Screen</screenName>
+    <screenName name="anipr.stampitgo.android.NearMe">NearBy Screen</screenName>
+
+</resources>

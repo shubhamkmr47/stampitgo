@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="ga_sessionTimeout">30</integer>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+	<!-- the Local LogLevel for Analytics -->
+    <string name="ga_logLevel">verbose</string>
+
+ <!-- Enable automatic Activity measurement -->
+    <!-- Treat events as test events and don't send to google -->
+    <bool name="ga_dryRun">false</bool>
+    
+    <!-- The screen names that will appear in reports -->
+    <screenName name="anipr.stampitgo.android.MianActivity">HomeScreen</screenName>
+    <screenName name="anipr.stampitgo.android.SignUp">Sign Up Screen</screenName>
+    <screenName name="anipr.stampitgo.android.ScanResponse">Scan Result Screen</screenName>
+    <screenName name="anipr.stampitgo.android.RedeemReward">Redeem Reward Screen</screenName>
+    <screenName name="anipr.stampitgo.android.Notifications">Notifications Screen</screenName>
+    <screenName name="anipr.stampitgo.android.GetStarted">GetStarted Screen</screenName>
+    <screenName name="anipr.stampitgo.android.Login">Login Screen</screenName>
+    <screenName name="anipr.stampitgo.android.Profile">User Profile Screen</screenName>
+    <screenName name="anipr.stampitgo.android.ShoutOut">ShoutOut Screen</screenName>
+    <screenName name="anipr.stampitgo.android.AboutUs">AboutUs Screen</screenName>
+    <screenName name="anipr.stampitgo.android.ChangePassword">ChangePassword Screen</screenName>
+    <screenName name="anipr.stampitgo.android.PromoCode">PromoCode Screen</screenName>
+    <screenName name="anipr.stampitgo.android.ForgotPassword">ForgotPassword Screen</screenName>
+    <screenName name="com.example.android.slidingtabsbasic.RestaurantDetails">Store Details</screenName>
+    <screenName name="anipr.stampitgo.android.StampsFragment">MyStamps Screen</screenName>
+    <screenName name="anipr.stampitgo.android.Rewards">Rewards Screen</screenName>
+    <screenName name="anipr.stampitgo.android.NearMe">NearBy Screen</screenName>
+    <!-- The following value should be replaced with correct property id. -->
+    <string name="ga_trackingId">UA-58899973-1</string>
+
+</resources>
