@@ -4,28 +4,8 @@ Stampitgo values users Loyalty for Stores by rewarding him on each visit. With S
 
 
 
-### What is this repository for? ###
+### What is this project for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* The project of android application was part of software development course. I have done internship at Techanipr group and worked with them for 3 months as the part of this project.
+* Version: 1.0.0.1
+* [stampitgo on playstore](https://play.google.com/store/apps/details?id=anipr.stampitgo.android&hl=en)
